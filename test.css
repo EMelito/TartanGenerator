@@ -3,3 +3,39 @@ html{
 	overflow-y: hidden;
 }
 
+body {
+  font-size: 20px;
+}
+form {
+  width: 300px;
+}
+label{
+  padding-right: 15px;
+  float: left;
+  clear: both;
+  margin: 5px 0;
+}
+
+input {
+  border-radius: 3px;
+  padding: 5px;
+  float: right;
+  margin: 5px 0;
+}
+
+input[type=submit] {
+  width: 100%;
+  margin-top: 15px;
+  clear: both;
+  background: lightBlue;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.show {
+  position: absolute;
+  top: 0;
+  bottom:0;
+  left:0;
+  right:0;
+}

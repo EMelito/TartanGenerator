@@ -1,6 +1,12 @@
-var lastName = prompt("What is your last name (letters only please)?");
-var firstName = prompt("What is your first name (letters only please)?");
+$("form").on( "submit", function( event ) {
+  event.preventDefault();
+  $("canvas").toggleClass("show");
+  var lastName=$("#lastName").val();
+  var firstName=$("#firstName").val();
+  tartan(lastName, firstName);
+});
 
+function tartan(lastName, firstName){
 var lName = lastName.toUpperCase();
 var fName = firstName.toUpperCase();
 
@@ -85,4 +91,5 @@ function makeColourful(colour, lightness, m, n) {
 	}
 
 
+}
 }
